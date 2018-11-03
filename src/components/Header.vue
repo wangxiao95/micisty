@@ -1,20 +1,28 @@
 <template>
   <header>
-    <div class="item">
-      <slot name="left"><span class="mui-icon mui-icon-undo"></span></slot>
+    <div class="item" @click="$store.state.backEvent">
+      <slot name="left"><span :class="$store.state.backBtn"></span></slot>
     </div>
     <div class="item title">
-      <slot name="title">Micisty</slot>
+      <slot name="title">{{$store.state.title}}</slot>
     </div>
-    <div class="item">
-      <slot name="right">添加</slot>
+    <div class="item" @click="$store.state.rightEvent">
+      <slot name="right">{{$store.state.rightText}}</slot>
     </div>
   </header>
 </template>
 
 <script>
   export default {
-    name: "Header"
+    name: "Header",
+    data () {
+        return {
+
+        }
+    },
+    methods: {
+
+    }
   }
 </script>
 

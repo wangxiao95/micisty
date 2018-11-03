@@ -19,6 +19,9 @@
     },
     components: {
       Header
+    },
+    methods: {
+
     }
   }
 </script>
