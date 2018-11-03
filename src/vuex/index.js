@@ -5,7 +5,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    title: 'Micisty',
+    title: 'Micisty', //
     backBtn: 'mui-icon mui-icon-undo',
     rightText: '',
     backEvent: function (e) {
