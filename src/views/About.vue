@@ -1,31 +1,40 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <div class="borderClass">
-      <img src=""/>
-    </div>
+    <ShopItem v-bind="shop"></ShopItem>
+    <button @click="loadMore">加载更多</button>
   </div>
 </template>
 
 <script>
+  import ShopItem from '../components/ShopItem'
   export default {
     data () {
       return {
-
+        shop: {
+          list: [
+            {text: 'aaa'},
+            {text: 'sfsd'}
+          ]
+        }
       }
     },
     components: {
-
+      ShopItem
+    },
+    methods: {
+      loadMore () {
+        this.shop.list.push({text: 'sdfdsf'});
+      }
     }
   }
 </script>
 <style>
-  .borderClass{
-    border: 1px solid #666;
-    width: 2rem;
-    height: 2rem;
-  }
-  .borderClass img{
+  /*.borderClass{*/
+    /*border: 1px solid #666;*/
+    /*width: 2rem;*/
+    /*height: 2rem;*/
+  /*}*/
+  /*.borderClass img{*/
 
-  }
+  /*}*/
 </style>

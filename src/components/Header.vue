@@ -48,7 +48,7 @@
   .item:nth-child(3) {
     flex-grow: 1;
   }
-  .title{
+  .title {
     font-size: .2rem;
     font-weight: 600;
   }
