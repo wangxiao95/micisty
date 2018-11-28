@@ -13,7 +13,15 @@
         shop: {
           list: [
             {text: 'aaa'},
-            {text: 'sfsd'}
+            {text: 'sfsd'},
+            {text: 'sfsd'},
+            {text: 'sfsd'},
+            {text: 'sfsd'},
+            {text: 'sfsd'},
+            {text: 'sfsd'},
+            {text: 'sfsd'},
+            {text: 'sfsd'},
+            {text: 'sfsd'},
           ]
         }
       }
@@ -23,7 +31,7 @@
     },
     methods: {
       loadMore () {
-        this.shop.list.push({text: 'sdfdsf'});
+        this.shop.list.push(this.list);
       }
     }
   }

@@ -24,7 +24,6 @@
     },
     mounted () {
       init('.waterFallItem', 5);
-      load(0, 2)
     }
   }
 </script>
